@@ -15,10 +15,14 @@ Space Base is a lightweight terminal program that lets you look up rocket engine
 ⸻
 
 🧩 How It Works
-	1.	The program stores all thruster lists in a nested Python dictionary.
-	2.	The user is dropped into a mini “shell” (database~$).
-	3.	Typed commands determine what is printed.
-	4.	Typing quit cleanly exits the program.
+1.  The program stores all thruster lists in a nested Python dictionary.
+	
+2.	The user is dropped into a mini “shell” (database~$).
+	
+3.	Typed commands determine what is printed.
+	
+4.	Typing quit cleanly exits the program.
+	
 
 ⸻
 
