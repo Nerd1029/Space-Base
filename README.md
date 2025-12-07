@@ -2,7 +2,7 @@
 
 A mini command-line space/rocket database.
 
-Space Base is a lightweight terminal program that lets you look up rocket engines and thrusters from SpaceX, NASA, and Blue Origin using simple database-style commands.
+Space Base is a lightweight terminal program that lets you look up rocket engines, thrusters, and other parts, as well as entire rockets from SpaceX, NASA, Blue Origin, and more, using simple database-style commands.
 
 ⸻
 
