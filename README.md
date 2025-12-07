@@ -44,5 +44,5 @@ database~$ quit
 Bye!
 ```
 
-![This is an image of a kitty](<img width="1280" height="1280" alt="database-4941301_1280" src="https://github.com/user-attachments/assets/c0fd2e15-65c1-4448-bf0d-500a1175dc25" />)
+![This is an image of a kitty](< img src="database-4941301_1280.png" width=10 height=10/>)
 The database code is as follows:
