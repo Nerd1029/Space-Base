@@ -23,18 +23,18 @@ Space Base is a lightweight terminal program that lets you look up rocket engine
 ⸻
 
 📝 Available Commands
-
+```
 database.get~thrusters.spacex      → Show SpaceX thrusters  
 database.get~thrusters.nasa        → Show NASA thrusters  
 database.get~thrusters.blue-origin → Show Blue Origin thrusters  
-quit                               → Exit Space Base  
-
+quit                               → Exit Space Base
+```
 All commands are not case-sensitive.
 
 ⸻
 
 💡 Example Session
-database~$ database.get~thrusters.spacex
+```database~$ database.get~thrusters.spacex
 SpaceX's Thrusters:  Merlin 1A, Merlin 1B, Merlin 1C, Merlin 1D, ...
     
 database~$ database.get~thrusters.nasa
@@ -42,3 +42,7 @@ NASA's Thrusters:  F-1, J-2, RS-25 (SSME), RL10, ...
 
 database~$ quit
 Bye!
+```
+
+![This is an image of a kitty](<img width="1280" height="1280" alt="database-4941301_1280" src="https://github.com/user-attachments/assets/c0fd2e15-65c1-4448-bf0d-500a1175dc25" />)
+The database code is as follows:
