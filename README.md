@@ -42,12 +42,3 @@ NASA's Thrusters:  F-1, J-2, RS-25 (SSME), RL10, ...
 
 database~$ quit
 Bye!
-
-
-⸻
-
-🗂 Code Structure Overview
-	•	data – main dictionary storing all organizations’ thrusters
-	•	Thruster_dict – points to the "Thrusters" section
-	•	SpaceX_Thrusters, NASA_Thrusters, Blue_Thrusters – extracted lists
-	•	While loop – runs the interactive command shell
