@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Space Base</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            max-width: 900px;
+        }
+        h1 {
+            font-size: 2.2em;
+        }
+        hr {
+            margin: 30px 0;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 16px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🌌 Space Base</h1>
+
+<p>A mini command-line space/rocket database.</p>
+
+<p>Space Base is a lightweight terminal program that lets you look up rocket engines, thrusters, and other parts, as well as entire rockets from SpaceX, NASA, Blue Origin, and more, using simple database-style commands.</p>
+
+<hr>
+
+<h2>🚀 Features</h2>
+<ul>
+    <li>Built-in database of real aerospace thrusters</li>
+    <li>Clean command-style interface (database.get~…)</li>
+    <li>Case-insensitive input</li>
+    <li>Great starter example for learning Python dictionaries, loops, and user commands</li>
+</ul>
+
+<hr>
+
+<h2>🧩 How It Works</h2>
+<ol>
+    <li>The program stores all thruster lists in a nested Python dictionary.</li>
+    <li>The user is dropped into a mini “shell” (database~$).</li>
+    <li>Typed commands determine what is printed.</li>
+    <li>Typing <code>quit</code> cleanly exits the program.</li>
+</ol>
+
+<hr>
+
+<h2>📝 Available Commands</h2>
+
+<pre><code>database.get~thrusters.spacex      → Show SpaceX thrusters
+database.get~thrusters.nasa        → Show NASA thrusters
+database.get~thrusters.blue-origin → Show Blue Origin thrusters
+quit                               → Exit Space Base
+</code></pre>
+
+<p>All commands are not case-sensitive.</p>
+
+<hr>
+
+<h2>💡 Example Session</h2>
+
+<pre><code>database~$ database.get~thrusters.spacex
+SpaceX's Thrusters:  Merlin 1A, Merlin 1B, Merlin 1C, Merlin 1D, ...
+    
+database~$ database.get~thrusters.nasa
+NASA's Thrusters:  F-1, J-2, RS-25 (SSME), RL10, ...
+
+database~$ quit
+Bye!
+</code></pre>
+
+<hr>
+
+<h2>Source Data Code</h2>
+
+<pre><code class="language-python">
+data = {
+    "Thrusters": {
+        "SpaceX": "Merlin 1A, Merlin 1B, Merlin 1C, Merlin 1D, Merlin 1D Vacuum, Kestrel, Draco, SuperDraco, Raptor 1, Raptor 2, Raptor 3, Raptor Vacuum, Starship cold-gas thrusters, Starship methalox hot-gas RCS thrusters, Starlink krypton Hall-effect thruster, Starlink argon Hall-effect thruster",
+        "NASA": "F-1, J-2, J-2X, RS-25 (SSME), RS-68, RL10, XLR99, XRS-2200 (Linear Aerospike), AJ10, R-4D, OMS Engine (OMS-E), RCS thrusters (various models), AR2-3, Apollo Lunar Module Descent Engine (LMDE), Apollo Lunar Module Ascent Engine (LMAE), Saturn H-1, Saturn E-1, Aerojet M-1, Centaur G-Series engines, Pioneer Venus Monoprop thrusters, Voyager hydrazine thrusters, Dawn xenon ion engine (NSTAR), Deep Space 1 ion engine, NEXT ion engine, AEPS (Advanced Electric Propulsion System), SLS Interim Cryogenic Propulsion Stage (ICPS) RL10 variant",
+        "Blue Origin": "BE-1, BE-2, BE-3, BE-3U, BE-4, BE-7, New Shepard reaction-control thrusters (hydrogen peroxide RCS), Blue Moon lander attitude-control thrusters (monoprop hydrazine RCS)",
+    }
+}
+
+Thruster_dict = data["Thrusters"]
+SpaceX_Thrusters = Thruster_dict["SpaceX"]
+NASA_Thrusters = Thruster_dict["NASA"]
+Blue_Thrusters = Thruster_dict["Blue Origin"]
+</code></pre>
+
+</body>
+</html>
